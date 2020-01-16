@@ -1,7 +1,7 @@
 require_relative '../lib/board'
 
 RSpec.describe Board do
-    subject(:board) { Board.new }
+  subject(:board) { Board.new }
 
   context '#set_index' do
     it 'return true if the value is positioned on the board player 1' do
@@ -18,6 +18,6 @@ RSpec.describe Board do
 
     it 'return false if is not posible to set' do
         expect(board.set_index(10, 1)).to eql(false)
-        end
     end
+  end
 end
