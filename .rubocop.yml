@@ -1,5 +1,6 @@
 AllCops:
   Exclude:
+    - "bin/*"
     - "db/**/*"
     - "config/**/*"
     - "Guardfile"
@@ -18,10 +19,6 @@ Metrics/ClassLength:
   Max: 150
 Metrics/BlockLength:
   ExcludedMethods: ['describe']
-Metrics/CyclomaticComplexity:
-  Max: 12
-Metrics/PerceivedComplexity:
-  Max: 12
 
 Style/Documentation:
   Enabled: false
@@ -35,12 +32,3 @@ Layout/ExtraSpacing:
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
-Layout/IndentationWidth:
-  Width: 4
-Layout/TrailingWhitespace:
-  Enabled: false
-  
-Style/ClassVars:
-  Enabled: false
-Style/BlockComments:
-  Enabled: false
