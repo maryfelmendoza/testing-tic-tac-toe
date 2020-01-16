@@ -2,9 +2,9 @@
 
 require_relative '../lib/game'
 
-RSpec.describe TicTacToe do
+RSpec.describe Game do
     context '#winner' do
-        subject(:game) { TicTacToe.new('player1', 'player2') }
+        subject(:game) { Game.new('player1', 'player2') }
 
         it 'returns nil if board has not a winner combination' do
             expect(game.winner(%w[1 2 3 4 5 6 7 8 9])).to eql(nil)
