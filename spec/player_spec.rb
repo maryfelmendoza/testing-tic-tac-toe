@@ -2,7 +2,7 @@ require_relative '../lib/player'
 
 RSpec.describe Player do
   let(:player) { Player.new('player 1', 1) }
- 
+
   context '#initialize' do
     it 'player object should be a Player' do
       expect(player).to be_a Player
